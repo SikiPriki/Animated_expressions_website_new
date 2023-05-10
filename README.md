@@ -1,2 +1,2 @@
 # Animated_expressions_website_new
-Fixed version of my Slutarbete code.
+This is an updated version of my thesis code, which is under the Slutarbete_kod_webbsida. This version here has a for loop, which shortens the animation code.
