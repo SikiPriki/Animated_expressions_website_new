@@ -90,12 +90,19 @@ async function smileH(){
     animFunction(hearth)
 }
 
+async function winky(){
+    let wink=await getFace(api_url+"?name=wink")
+    wink=wink[0]
+    animFunction(wink)
+}
+
 
 //Event listeners for the button
 document.getElementById('but_happy').addEventListener("click", smile)
 document.getElementById('but_sad').addEventListener("click", sad)
 document.getElementById('but_neut').addEventListener("click", neutral)
 document.getElementById('but_heart').addEventListener("click", smileH)
+document.getElementById('but_wink').addEventListener("click", winky)
 
 
 //https://animejs.com/documentation/#playPause
