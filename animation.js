@@ -96,6 +96,24 @@ async function winky(){
     animFunction(wink)
 }
 
+async function angry(){
+    let angry=await getFace(api_url+"?name=angry")
+    angry=angry[0]
+    animFunction(angry)
+}
+
+async function smile3(){
+    let smile3=await getFace(api_url+"?name=smile3")
+    smile3=smile3[0]
+    animFunction(smile3)
+}
+
+async function bigSmile(){
+    let bigs=await getFace(api_url+"?name=bigsmile")
+    bigs=bigs[0]
+    animFunction(bigs)
+}
+
 
 //Event listeners for the button
 document.getElementById('but_happy').addEventListener("click", smile)
@@ -103,6 +121,10 @@ document.getElementById('but_sad').addEventListener("click", sad)
 document.getElementById('but_neut').addEventListener("click", neutral)
 document.getElementById('but_heart').addEventListener("click", smileH)
 document.getElementById('but_wink').addEventListener("click", winky)
+document.getElementById('but_ang').addEventListener("click",angry)
+document.getElementById('but_3').addEventListener("click", smile3)
+document.getElementById('but_big').addEventListener("click", bigSmile)
+
 
 
 //https://animejs.com/documentation/#playPause
