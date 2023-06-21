@@ -114,6 +114,11 @@ async function bigSmile(){
     animFunction(bigs)
 }
 
+async function suprised(){
+    let sup=await getFace(api_url+"?name=suprise")
+    sup=sup[0]
+    animFunction(sup)
+}
 
 //Event listeners for the button
 document.getElementById('but_happy').addEventListener("click", smile)
@@ -124,6 +129,7 @@ document.getElementById('but_wink').addEventListener("click", winky)
 document.getElementById('but_ang').addEventListener("click",angry)
 document.getElementById('but_3').addEventListener("click", smile3)
 document.getElementById('but_big').addEventListener("click", bigSmile)
+document.getElementById('but_sup').addEventListener("click", suprised)
 
 
 
